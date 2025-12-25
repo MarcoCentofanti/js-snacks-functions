@@ -2,12 +2,19 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
-
 // Dichiara la funzione qui.
-
+function estraiIniziale(listaNomi, lettera) {
+  newArray = [];
+  for (i = 0; i < listaNomi.length; i++) {
+    if (listaNomi[i][0] === lettera) {
+      newArray.push(listaNomi[i]);
+    }
+  }
+  return newArray;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(estraiIniziale(names, prompt("Scegli una lettera")));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
