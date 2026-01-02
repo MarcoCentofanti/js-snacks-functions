@@ -7,15 +7,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 function iniziali (array){
   let lettera
   newArray = []
+  
   for (i = 0; i < array.length; i++ ){
     lettera = array[i][0]
     newArray.push(lettera)
   }
   return newArray
 }
-console.log(iniziali(names))
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(iniziali(names))q
 
 
 

@@ -6,7 +6,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 function estraiIniziale(listaNomi, lettera) {
   newArray = [];
   for (i = 0; i < listaNomi.length; i++) {
-    if (listaNomi[i][0] === lettera) {
+    if (listaNomi[i][0].toLowerCase() === lettera.toLowerCase()) {
       newArray.push(listaNomi[i]);
     }
   }
